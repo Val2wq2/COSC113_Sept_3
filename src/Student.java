@@ -63,5 +63,8 @@ public class Student {
         s3 = new Student(FN, LN, Sid);
         System.out.println(s3.FN);
         System.out.println(s3.LN);
+
+        Student s5;
+        s5 = new Student(FN,Sid,LN);
     }
 }
