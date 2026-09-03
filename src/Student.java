@@ -11,15 +11,38 @@ public class Student {
          this.Sid = 0;
      }
 
-     // How many parameters = 3
+//    Student(String FN, String LN){
+//        this.FN = FN;
+//        this.LN = LN;
+//    }
+
+    Student(String FN, String LN){
+        this.FN = FN;
+        this.LN = LN;
+    }
+
+
+    // How many parameters = 3
     Student(String FN, String LN, int Sid){
         this.FN = FN;
         this.LN = LN;
         this.Sid = Sid;
     }
 
+    Student(String FN, int Sid, String LN){
+        this.FN = FN;
+        this.LN = LN;
+        this.Sid = Sid;
+    }
 
+    // You can create overloaded constructors by 1)varying the parameter number, 2) order
     public static void main(String[] args) {
+
+        Student s4 = new Student("Helena","Payton");
+        System.out.println(s4.FN);
+        System.out.println(s4.LN);
+        System.out.println(s4.Sid);
+        System.out.println("--------------------");
         // Variable s1 is of Student type
         Student s1;
         s1 = new Student();
